@@ -10,3 +10,7 @@ print(iris.feature_names)
 # labels
 print(iris.target_names)
 
+# first entry in the iris data set
+print(iris.data[0])
+
+
