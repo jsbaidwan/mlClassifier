@@ -14,3 +14,7 @@ test_index = [0, 50, 100]
 # removing three entries from the data and target variables
 train_target = np.delete(iris.target, test_index)
 train_data = np.delete(iris.data, test_index, axis=0)
+
+# Testing Data
+test_target = iris.target[test_index]
+test_data = iris.data[test_index]
