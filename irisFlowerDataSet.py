@@ -3,6 +3,7 @@ import numpy as np
 
 # import iris data set from scikit learn library
 from sklearn.datasets import load_iris
+from sklearn import tree
 
 iris = load_iris()
 
@@ -18,3 +19,7 @@ train_data = np.delete(iris.data, test_index, axis=0)
 # Testing Data
 test_target = iris.target[test_index]
 test_data = iris.data[test_index]
+
+clf = tree.DecisionTreeClassifier()
+# fit(features, labels)
+clf.fit(train_data, train_target)
