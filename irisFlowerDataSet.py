@@ -23,3 +23,6 @@ test_data = iris.data[test_index]
 clf = tree.DecisionTreeClassifier()
 # fit(features, labels)
 clf.fit(train_data, train_target)
+
+print(test_target)
+print(clf.predict(test_data))
