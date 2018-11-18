@@ -8,4 +8,6 @@ from sklearn import datasets
 
 iris = datasets.load_iris()
 
-
+# Can think of classifier as a function f(x) = y
+X = iris.data  # features
+y = iris.target  # labels
