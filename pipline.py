@@ -11,3 +11,9 @@ iris = datasets.load_iris()
 # Can think of classifier as a function f(x) = y
 X = iris.data  # features
 y = iris.target  # labels
+
+# partition into training and testing sets
+from sklearn.model_selection import train_test_split
+
+# test_size=0.5 -> split in half
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.5)
