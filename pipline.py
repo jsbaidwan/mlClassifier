@@ -28,4 +28,8 @@ my_classifier.fit(X_train, y_train)
 predictions = my_classifier.predict(X_test)
 print(predictions)
 
+# Test
+from sklearn.metrics import accuracy_score
+print(accuracy_score(predictions, y_test))
+
 
