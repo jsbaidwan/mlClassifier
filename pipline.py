@@ -32,4 +32,20 @@ print(predictions)
 from sklearn.metrics import accuracy_score
 print(accuracy_score(predictions, y_test))
 
+# Repeat using KNN
+# Classifier
+from sklearn.neighbors import KNeighborsClassifier
+
+my_classifier = KNeighborsClassifier()
+my_classifier.fit(X_train, y_train)
+
+# predict
+predictions = my_classifier.predict(X_test)
+print(predictions)
+
+# test
+from sklearn.metrics import accuracy_score
+
+print(accuracy_score(y_test, predictions))
+
 
