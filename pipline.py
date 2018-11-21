@@ -17,3 +17,15 @@ from sklearn.model_selection import train_test_split
 
 # test_size=0.5 -> split in half
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.5)
+
+# Classifier
+from sklearn import tree
+
+my_classifier = tree.DecisionTreeClassifier()
+my_classifier.fit(X_train, y_train)
+
+# Predict
+predictions = my_classifier.predict(X_test)
+print(predictions)
+
+
