@@ -46,6 +46,7 @@ print(predictions)
 # test
 from sklearn.metrics import accuracy_score
 
+# print the predication
 print(accuracy_score(y_test, predictions))
 
 
