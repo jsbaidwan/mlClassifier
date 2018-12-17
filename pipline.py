@@ -1,3 +1,9 @@
+class ScrappyKNN():
+    def fit(self, X_train, y_train):
+        pass
+
+    def predict(self, X_test):
+        pass
 
 # How to test a model and determine accuracy
 
@@ -21,7 +27,8 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.5)
 # Classifier
 # from sklearn.neighbors import KNeighborsClassifier
 
-my_classifier = KNeighborsClassifier()
+# my_classifier = KNeighborsClassifier()
+my_classifier = ScrappyKNN()
 my_classifier.fit(X_train, y_train)
 
 # Predict
