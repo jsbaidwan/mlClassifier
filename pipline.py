@@ -1,6 +1,7 @@
 class ScrappyKNN():
     def fit(self, X_train, y_train):
-        pass
+        self.X_train = X_train
+        self.y_train - y_train
 
     def predict(self, X_test):
         pass
