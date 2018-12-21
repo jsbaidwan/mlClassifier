@@ -1,3 +1,4 @@
+import random
 class ScrappyKNN():
     def fit(self, X_train, y_train):
         self.X_train = X_train
@@ -5,6 +6,8 @@ class ScrappyKNN():
 
     def predict(self, X_test):
         predictions = []
+        for row in X_test:
+            label = random.choice(self.y_train)
         return predictions
 
 # How to test a model and determine accuracy
