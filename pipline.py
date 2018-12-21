@@ -8,6 +8,7 @@ class ScrappyKNN():
         predictions = []
         for row in X_test:
             label = random.choice(self.y_train)
+            predictions.append(label)
         return predictions
 
 # How to test a model and determine accuracy
