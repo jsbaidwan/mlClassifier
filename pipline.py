@@ -4,7 +4,8 @@ class ScrappyKNN():
         self.y_train - y_train
 
     def predict(self, X_test):
-        pass
+        predictions = []
+        return predictions
 
 # How to test a model and determine accuracy
 
