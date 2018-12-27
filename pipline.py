@@ -12,7 +12,7 @@ class ScrappyKNN():
     def predict(self, X_test):
         predictions = []
         for row in X_test:
-            label = random.choice(self.y_train)
+            label = self.closest(row)
             predictions.append(label)
         return predictions
 
