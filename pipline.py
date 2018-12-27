@@ -1,8 +1,13 @@
+from scipy.spatial import distance
+
+def euc(a,b):
+    return distance.euclidean(a,b)
+
 import random
 class ScrappyKNN():
     def fit(self, X_train, y_train):
         self.X_train = X_train
-        self.y_train - y_train
+        self.y_train = y_train
 
     def predict(self, X_test):
         predictions = []
