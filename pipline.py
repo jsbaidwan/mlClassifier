@@ -20,6 +20,8 @@ class ScrappyKNN():
         best_dist = euc(row, self.X_train[0])
         for i in range(1, len(self.X_train)):
             dist = euc(row, self.X_train[i])
+            if dist < best_dist:
+                best_dist = dist
 
 # How to test a model and determine accuracy
 
